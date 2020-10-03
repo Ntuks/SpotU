@@ -2,11 +2,22 @@
     <string name="app_name">SpotU</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="signin_fragment_label">SignInStart Fragment</string>
+    <string name="signup_start_fragment_label">SignUp Fragment</string>
+    <string name="signup_finish_fragment_label">SignUpFinish Fragment</string>
+    <string name="forgot_password_fragment_label">ForgotPassword Fragment</string>
+
     <string name="next">Next</string>
+    <string name="submit">Submit</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset">Reset </string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="please_enter_a_password_with_at_least_6_characters_including_at_least_1_number_1_upper_and_lower_case_letter">Please enter a password with at least 6 characters, including at least 1 number, 1 upper and lower case letter.</string>
+    <string name="re_enter_password">Re-Enter Password</string>
+    <string name="login">Login</string>
 </resources>

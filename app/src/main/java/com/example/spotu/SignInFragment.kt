@@ -1,10 +1,12 @@
 package com.example.spotu
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 
@@ -21,8 +23,18 @@ class SignInFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<Button>(R.id.button_first).setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+        view.findViewById<TextView>(R.id.forgot_password).setOnClickListener {
+            findNavController().navigate(R.id.action_SignInFragment_to_ForgotPasswordFragment)
+        }
+
+        view.findViewById<TextView>(R.id.register).setOnClickListener {
+            findNavController().navigate(R.id.action_SignInFragment_to_SignUpStartFragment)
+        }
+
+        view.findViewById<TextView>(R.id.btn_submit).setOnClickListener {
+            val intent = Intent(this.context, HomeActivity::class.java)
+            startActivity(intent)
         }
     }
+
 }

@@ -3,26 +3,50 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/SignInFragment"
+    tools:ignore="UnusedNavigation">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.spotu.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/SignInFragment"
+        android:name="com.example.spotu.SignInFragment"
+        android:label="@string/signin_fragment_label"
+        tools:layout="@layout/fragment_signin">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_SignInFragment_to_SignUpStartFragment"
+            app:destination="@id/SignUpStartFragment" />
+        <action
+            android:id="@+id/action_SignInFragment_to_ForgotPasswordFragment"
+            app:destination="@id/ForgotPasswordFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.spotu.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        android:id="@+id/ForgotPasswordFragment"
+        android:name="com.example.spotu.ForgotPasswordFragment"
+        android:label="@string/forgot_password_fragment_label"
+        tools:layout="@layout/fragment_forgot_password">
 
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_ForgotPasswordFragment_to_SignInFragment"
+            app:destination="@id/SignInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SignUpStartFragment"
+        android:name="com.example.spotu.SignUpStartFragment"
+        android:label="@string/signup_start_fragment_label"
+        tools:layout="@layout/fragment_signup_page_one">
+
+        <action
+            android:id="@+id/action_SignUpStartFragment_to_SignUpFinishFragment"
+            app:destination="@id/SignUpFinishFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SignUpFinishFragment"
+        android:name="com.example.spotu.SignUpFinishFragment"
+        android:label="@string/signup_finish_fragment_label"
+        tools:layout="@layout/fragment_signup_page_two">
+
+        <action
+            android:id="@+id/action_SignUpFinishFragment_to_SignInFragment"
+            app:destination="@id/SignInFragment" />
     </fragment>
 </navigation>

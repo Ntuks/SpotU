@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpStartFragment">
+    tools:context=".SignUpFinishFragment">
 
     <LinearLayout
         android:id="@+id/ll_main_layout"
@@ -130,10 +130,13 @@
 
             <Button
                 android:id="@+id/submit_btn"
-                android:layout_width="wrap_content"
+                android:text="@string/submit"
+                android:layout_width="233dp"
                 android:layout_height="wrap_content"
-                android:text="Submit"
+                android:background="#eb0e5b"
+                android:textColor="#ffffff"
                 android:textAllCaps="false" />
+
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
